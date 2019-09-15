@@ -1,23 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+
+const linkedin = `<div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="vertical" data-theme="light" data-vanity="austin-s-zimmer"><a class="LI-simple-link" href='https://www.linkedin.com/in/austin-s-zimmer?trk=profile-badge'>Austin Zimmer</a></div>`;
+const github = `<div class="github-card" data-github="zimmeren" data-width="400" data-height="" data-theme="default"></div>`
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <br/>
+        <span>zimmeren</span>
+        <br/>
+        <div dangerouslySetInnerHTML={{__html: linkedin}}></div>
+        <br/>
+        <div dangerouslySetInnerHTML={{__html: github}}></div>
       </header>
     </div>
   );
